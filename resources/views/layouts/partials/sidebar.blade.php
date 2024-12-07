@@ -40,6 +40,25 @@
                     Author
                 </a>
             </li>
+            <!-- Category -->
+            <li>
+                <a href="{{ route('category.index') }}" class="flex items-center px-3 py-2 {{ request()->routeIs('category.*') ? 'bg-[#ffc01f] text-black' : 'text-gray-300 hover:bg-[#171C28]' }} rounded-md">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    Category
+                </a>
+            </li>
+            <!-- Tag -->
+            <li>
+                <a href="{{ route('tag.index') }}" class="flex items-center px-3 py-2 {{ request()->routeIs('tag.*') ? 'bg-[#ffc01f] text-black' : 'text-gray-300 hover:bg-[#171C28]' }} rounded-md">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z M6 6h.008v.008H6V6z"/>
+                    </svg>
+                    Tag
+                </a>
+            </li>
 
             <!-- Pengaturan -->
             <li>
