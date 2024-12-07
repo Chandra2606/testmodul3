@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('users', UserController::class);
     Route::get('/users/getdata', [UserController::class, 'show'])->name('users.show');
     Route::post('/users/store', [UserController::class, 'store'])->name('users.store');
+
+    Route::resource('author', AuthorController::class);
+    Route::get('/author/show', [AuthorController::class, 'show'])->name('author.show');
 });
 
 

@@ -32,7 +32,7 @@
             </li>
             <!-- Author -->
             <li>
-                <a href="{{ 'author' }}" class="flex items-center px-3 py-2 {{ request()->routeIs('authors.*') ? 'bg-[#ffc01f] text-black' : 'text-gray-300 hover:bg-[#171C28]' }} rounded-md">
+                <a href="{{ 'author' }}" class="flex items-center px-3 py-2 {{ request()->routeIs('author.*') ? 'bg-[#ffc01f] text-black' : 'text-gray-300 hover:bg-[#171C28]' }} rounded-md">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                             d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />

@@ -25,6 +25,7 @@
         <table id="default-table">
             <thead>
                 <tr>
+                    <th data-sortable="true" data-type="number">No</th>
                     <th data-sortable="true" data-type="string">Name</th>
                     <th data-sortable="true" data-type="string">Email</th>
                     <th data-sortable="false">Action</th>
