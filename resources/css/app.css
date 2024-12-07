@@ -1,4 +1,5 @@
 @import 'flowbite';
+@import 'datatables';
 
 @tailwind base;
 @tailwind components;
@@ -6,3 +7,4 @@
 [x-cloak] {
     display: none !important;
 }
+
