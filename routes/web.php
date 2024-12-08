@@ -10,6 +10,7 @@ use App\Http\Controllers\Home;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Home::class, 'index'])->name('home');
+Route::get('/articles/{id}', [Home::class, 'show'])->name('articles.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard.index');

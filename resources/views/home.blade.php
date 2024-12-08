@@ -155,7 +155,9 @@
                                 <div class="absolute bottom-0 p-6">
                                     <span class="text-white/80 text-sm font-medium">FEATURED</span>
                                     <h2 class="text-white text-2xl md:text-3xl font-serif font-bold mt-2 text-shadow">
-                                        {{ $articles->first()->title }}
+                                        <a href="{{ route('articles.show', $articles->first()->id) }}">
+                                            {{ $articles->first()->title }}
+                                        </a>
                                     </h2>
                                     <p class="text-white/90 mt-2 text-sm">
                                         By {{ $articles->first()->author->name ?? 'Anonymous' }} •
@@ -172,7 +174,7 @@
                 <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="font-serif text-xl font-bold">Trending Now</h3>
                     <div class="space-y-6">
-                        @foreach ($articles->skip(1)->take(4) as $index => $article)
+                        @foreach ($articles->skip(1) as $index => $article)
                             <article class="group cursor-pointer">
                                 <div class="flex gap-4 items-start">
                                     <span
@@ -183,7 +185,9 @@
                                                 class="text-xs font-bold text-blue-600">{{ strtoupper($article->categories->first()->name) }}</span>
                                         @endif
                                         <h4 class="font-serif font-bold group-hover:text-blue-600">
-                                            {{ $article->title }}
+                                            <a href="{{ route('articles.show', $article->id) }}">
+                                                {{ $article->title }}
+                                            </a>
                                         </h4>
                                         {{-- <p class="text-sm text-gray-600">{{ $article->read_time ?? '5' }} min read</p> --}}
                                     </div>
@@ -232,7 +236,7 @@
                                 </div>
 
                                 <h3 class="font-serif font-bold text-xl group-hover:text-blue-600 line-clamp-2">
-                                    <a href="#">
+                                    <a href="{{ route('articles.show', $article->id) }}">
                                         {{ $article->title }}
                                     </a>
                                 </h3>
@@ -272,7 +276,7 @@
                                             </span>
                                         @endforeach
                                     </div>
-                                @endif
+                                @endif  
                             </div>
                         </article>
                     @endforeach
