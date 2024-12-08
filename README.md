@@ -28,12 +28,19 @@ git clone https://github.com/Chandra2606/testmodul3.git
 cd testmodul3
 
 ### 2. Install Dependencies
+```
 composer install
 npm install
+```
 
 ### 3. Konfigurasi Environment
+```
 cp .env.example .env
+```
+
+```
 php artisan key:generate
+```
 
 ### 4. Konfigurasi Database
 Sesuaikan pengaturan berikut di file `.env`:
@@ -48,10 +55,14 @@ DB_PASSWORD=
 ```
 
 ### 5. Migrate Database
+```
 php artisan migrate --seed
+```
 
 ### 6. Jalankan Server
+```
 composer run dev
+```
 
 
 <div align="center">
