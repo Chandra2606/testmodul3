@@ -1,6 +1,3 @@
-<div align="center">
-  <h1>🚀 TES MODULE 3 IN CV.MEDIATAMA</h1>
-</div>
 
 ## 🛠️ Teknologi yang Digunakan
 
