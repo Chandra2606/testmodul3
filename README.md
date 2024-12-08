@@ -74,6 +74,7 @@ Password: admin
 ```
 
 
+
 <div align="center">
   
 ## 👨‍💻 Author
@@ -83,4 +84,7 @@ Password: admin
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Chandra2606)
 
 </div>
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
