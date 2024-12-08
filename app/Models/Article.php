@@ -23,5 +23,5 @@ class Article extends Model
         return $this->belongsToMany(Tag::class, 'article_tag_relationship');
     }
 
-
+    
 }
