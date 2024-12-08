@@ -22,7 +22,9 @@
 
 ### 1. Clone Repository
 git clone https://github.com/Chandra2606/testmodul3.git
+```
 cd testmodul3
+```
 
 ### 2. Install Dependencies
 ```
