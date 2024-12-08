@@ -3,6 +3,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laravel_Breeze-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
   <img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=black" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
@@ -61,6 +62,15 @@ php artisan migrate --seed
 ### 6. Jalankan Server
 ```
 composer run dev
+```
+
+### 7. Login
+```
+http://127.0.0.1:8000/login
+```
+```
+Username: admin@gmail.com
+Password: admin
 ```
 
 
