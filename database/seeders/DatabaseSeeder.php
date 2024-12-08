@@ -20,6 +20,9 @@ class DatabaseSeeder extends Seeder
             AuthorTableSeeder::class,
             CategoryTableSeeder::class,
             TagTableSeeder::class,
+            ArticleTableSeeder::class,
+            ArticleCategoryRelationshipTableSeeder::class,
+            ArticleTagRelationshipTableSeeder::class,
         ]);
     }
 }

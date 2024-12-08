@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
@@ -33,6 +34,10 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('tag', TagController::class);
     Route::get('/tag/show', [TagController::class, 'show'])->name('tag.show');
+
+    Route::resource('article', ArticleController::class);
+    Route::get('/article/getdata', [ArticleController::class, 'show'])->name('article.show');
+    Route::get('/article/{id}/detail', [ArticleController::class, 'detail'])->name('article.detail');
 });
 
 

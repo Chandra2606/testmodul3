@@ -2,30 +2,36 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
+use App\Models\Article;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CategoryTableSeeder extends Seeder
+class ArticleTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Category::insert([
+        Article::insert([
             [
-                'name' => 'Programming',
+                'title' => 'Laravel for Beginners',
+                'content' => 'A beginner\'s guide to Laravel',
+                'author_id' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Technology', 
+                'title' => 'PHP for Advanced Users', 
+                'content' => 'Advanced PHP programming',
+                'author_id' => 2,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Framework',
+                'title' => 'Introduction to MVC',
+                'content' => 'Basic MVC concepts in PHP',
+                'author_id' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
             ]
